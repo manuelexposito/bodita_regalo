@@ -1,3 +1,23 @@
-h1{
-    color: green;
-}
+ body {
+      margin: 0;
+      background-color: #121212; /* fondo oscuro */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      box-sizing: border-box;
+    }
+
+    .background {
+        background-image: url("../img/background.jpg");
+        background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      width: 100%;
+      max-width: calc(100% - 40px); /* 20px de margen a cada lado */
+      height: 300px; /* o cualquier altura que desees */
+      margin: 0 20px;
+      
+      border-radius: 8px;
+    }
