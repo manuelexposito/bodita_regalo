@@ -4,20 +4,69 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      box-sizing: border-box;
+      flex-direction: column;
+      
     }
 
-    .background {
-        background-image: url("img/background.jpg");
-        background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
+    .header{
+        color:white;
+    }
 
+.fila_fotos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+          flex-direction: row;
+                justify-content: space-evenly;
+
+          
+
+}
+
+.fotillo{
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+}
+.chichon{
+    background-image: url("img/chichon.jpg");
+    background-size: 300%;
+    background-position: center;
+}
+
+.milka{
+    background-image: url("img/milka.jpg");
+    background-size: 100%;
+    background-position: 0px 0px;
+}
+
+.leo{
+    background-image: url("img/leo.jpg");
+    background-size: 100%;
+    background-position: center;
+}
+
+
+    .background {
+      background-image: url("img/background.jpg");
+      background-size: contain;
+      background-position: top;
+      background-repeat: no-repeat;
       width: 100%;
-      max-width: calc(100% - 40px); /* 20px de margen a cada lado */
-      height: 300px; /* o cualquier altura que desees */
-      margin: 0 20px;
-      
-      border-radius: 8px;
+      margin-block: 30px ;
+      max-width: calc(100% - 40px);
+      height: 800px;
+
+      border-radius: 10px;
+    }
+
+
+    .text{
+        
+        padding:60px;
+
+    }
+    
+    .parrafo{
+        
     }
