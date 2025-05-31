@@ -74,6 +74,36 @@
      color: rgb(36, 21, 21);
  }
 
+#pista{
+    width: 500px;
+    height: 200px;
+    background-color: black;
+    margin: 10PX;
+}
+
+#myDialog{
+    border: none;
+    overflow-x: hidden;
+}
+
+.dialog-body{
+    display: flex;
+    flex-direction: column;
+}
+
+.dialog-btns{
+     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.highlight {
+  border: 5px solid #ff9800 !important;
+  transition: border 0.2s ease;
+  box-sizing: border-box
+}
+
+
 @media (max-width: 580px) {
   .text {
          padding: 50px 70px;

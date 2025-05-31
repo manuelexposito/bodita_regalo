@@ -10,56 +10,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="page">
         <div class="header">
-        <h1>
-            ¿Buscas la contraseña?
-        </h1>
-        <p>
-            Vuestros bebés peludos os echarán un cable, no sin antes adivinar su acertijo... 
-        </p>
-        <h5>
-            (no os lo iban a poner tan fácil)
-        </h5>
-    </div>
-    <div class="fila_fotos">
-        <div class="fotillo chichon"></div>
-        <div class="fotillo milka"></div>
-        <div class="fotillo leo"></div>
-    </div>
-    <div class="background">
-        <div class="text">
+            <h1>
+                ¿Buscas la clave?
+            </h1>
             <p>
-                Tres cifras sellan este cofre cerrado,
-                y el amor casado será el único aliado.<br><br>
-                Del alba primera toma el número inicial,
-                y súmale el décimo, memoria vital.<br><br>
-                A ese ciclo de años milénico y recto,
-                déjalo crecer con los lazos del afecto.<br>
-                Mas no cantes victoria, aún falta el segundo,
-                de aquel que nació cuando el mes se hizo hondo.<br><br>
-                Cuenta cinco pasos, y once más,
-                y súmale el año en que empezó a respirar.<br>
-                  Tres guardianes acechan, suaves y felinos,
-                y sus huellas duplican destinos.<br>
-                Multiplica sus cabezas por la suma del varón,
-                y réstalo todo del primer corazón.<br><br>
-                   Si tu amor es sabio, y tu mente tenaz,
-                hallarás la llave que este cofre te da.
+                Vuestros bebés peludos os echarán un cable, no sin antes adivinar su acertijo...
             </p>
-     
+            <h5>
+                (no os lo iban a poner tan fácil)
+            </h5>
+        </div>
+        <div class="fila_fotos">
+            <div class="fotillo chichon" onclick="pressCat('chichon')"></div>
+            <div class="fotillo milka" onclick="pressCat('milka')"></div>
+            <div class="fotillo leo" onclick="pressCat('leo') "></div>
+        </div>
+        <div class="background">
+            <div class="text">
+                <p>
+                    Tres cifras sellan este cofre cerrado,
+                    y el amor casado será el único aliado.<br><br>
+                    Del alba primera toma el número inicial,
+                    y súmale el décimo, memoria vital.<br><br>
+                    A ese ciclo de años milénico y recto,
+                    déjalo crecer con los lazos del afecto.<br>
+                    Mas no cantes victoria, aún falta el segundo,
+                    de aquel que nació cuando el mes se hizo hondo.<br><br>
+                    Cuenta cinco pasos, y once más,
+                    y súmale el año en que empezó a respirar.<br>
+                    Tres guardianes acechan, suaves y felinos,
+                    y sus huellas duplican destinos.<br>
+                    Multiplica sus cabezas por la suma del varón,
+                    y réstalo todo del primer corazón.<br><br>
+                    Si tu amor es sabio, y tu mente tenaz,
+                    hallarás la llave que este cofre te da.
+                </p>
+
+            </div>
+
+        </div>
+    </div>
+    <dialog id="myDialog">
+        <div class="dialog-body">
+            <h2>¡Me descubriste!</h2>
+            <p>Como recompensa podré traducirte la fórmula para que averigües la clave.</p>
+            <h5>si es que ya os habéis rendido...</h5>
+            <div id="pista"></div>
+        </div>
+        <div class="dialog-btns">
+            <button class="close-btn" id="pistaBtn">Me rindo ya venga dame la pista que sea</button>
+            <button class="close-btn" id="closeDialogBtn">Cerrar</button>
         </div>
 
-    </div>
-    </div>
-    
-
-    <script src="" async defer></script>
+    </dialog>
+    <script src="js/script.js" async defer></script>
 </body>
 
 </html>
