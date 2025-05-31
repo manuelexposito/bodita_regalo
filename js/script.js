@@ -2,7 +2,7 @@ var list = [];
 var showPista = false;
 
 var catBtns = document.querySelectorAll(".fotillo");
-console.log(catBtns);
+
 catBtns.forEach((catBtn, index) => {
   catBtn.addEventListener("click", () => {
     catBtn.classList.add("highlight");
@@ -13,17 +13,21 @@ catBtns.forEach((catBtn, index) => {
 });
 
 function pressCat(cat) {
-  if (!list.find((a) => a == cat)) {
-    list.push(cat);
+  list.push(cat);
     verifyList();
-  } 
+
 }
 
 function verifyList() {
+  
   const expectedOrder = ["milka", "leo", "chichon"];
   var gatosSeleccionadosEnOrden = list.every(
     (item, index) => item === expectedOrder[index]
   );
+
+  if(list.length === 3 && !gatosSeleccionadosEnOrden){
+    clearList();
+  }
 
   if (gatosSeleccionadosEnOrden) {
     if (list.length === 3) {
