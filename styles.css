@@ -1,72 +1,83 @@
  body {
-      margin: 0;
-      background-color: #121212; /* fondo oscuro */
-      display: flex;
-      justify-content: center;
+     
+     background-color: #121212;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+   
+ }
+
+ .page{
+ max-width: 550px;
+ display: flex;
+ flex-direction: column;
       align-items: center;
-      flex-direction: column;
-      
-    }
+ }
 
-    .header{
-        color:white;
-    }
+ .header {
+     color: white;
+     margin: 0px 20px;
+ }
 
-.fila_fotos{
-    width: 100%;
-    display: flex;
-    align-items: center;
-          flex-direction: row;
-                justify-content: space-evenly;
+ .fila_fotos {
+     width: 100%;
+     display: flex;
+     align-items: center;
+     flex-direction: row;
+     justify-content: space-evenly;
 
-          
+ }
 
+ .fotillo {
+     width: 80px;
+     height: 80px;
+     border-radius: 100px;
+ }
+
+ .chichon {
+     background-image: url("img/chichon.jpg");
+     background-size: 300%;
+     background-position: center;
+ }
+
+ .milka {
+     background-image: url("img/milka.jpg");
+     background-size: 100%;
+     background-position: 0px 0px;
+ }
+
+ .leo {
+     background-image: url("img/leo.jpg");
+     background-size: 100%;
+     background-position: center;
+ }
+
+
+ .background {
+     background-image: url("img/background.jpg");
+     background-size: contain;
+     background-position: top;
+     background-repeat: no-repeat;
+     width: 100%;
+     margin-block: 30px;
+     max-width: calc(100% - 40px);
+     height: 1000px;
+     border-radius: 10px;
+     
+ }
+
+
+ .text {
+     padding: 70px 80px;
+     font-family: "Macondo", cursive;
+     color: rgb(36, 21, 21);
+ }
+
+@media (min-width: 600px) {
+  .container {
+         padding: 30px 40px;
+
+  }
 }
 
-.fotillo{
-    width: 80px;
-    height: 80px;
-    border-radius: 100px;
-}
-.chichon{
-    background-image: url("img/chichon.jpg");
-    background-size: 300%;
-    background-position: center;
-}
-
-.milka{
-    background-image: url("img/milka.jpg");
-    background-size: 100%;
-    background-position: 0px 0px;
-}
-
-.leo{
-    background-image: url("img/leo.jpg");
-    background-size: 100%;
-    background-position: center;
-}
-
-
-    .background {
-      background-image: url("img/background.jpg");
-      background-size: contain;
-      background-position: top;
-      background-repeat: no-repeat;
-      width: 100%;
-      margin-block: 30px ;
-      max-width: calc(100% - 40px);
-      height: 800px;
-
-      border-radius: 10px;
-    }
-
-
-    .text{
-        
-        padding:60px;
-
-    }
-    
-    .parrafo{
-        
-    }
