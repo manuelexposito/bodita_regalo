@@ -44,11 +44,12 @@ function openDialog() {
   dialog.showModal();
   closeBtn.addEventListener("click", () => {
     dialog.close();
+    pista.style.backgroundColor = "black";
     pista.textContent = "";
   });
 
   pistaBtn.addEventListener("click", () => {
-    pista.textContent = "Holaaa";
+    pista.textContent = "(1 + 10 + 99) x 6 - (5 + 11 + 92) x 3";
     pista.style.backgroundColor = "white";
   });
 }
